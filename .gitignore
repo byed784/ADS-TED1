@@ -33,6 +33,7 @@ jspm_packages/
 # Node ignore
 node_modules/
 #LOGS
+*log.*
 logs
 *.log
 npm-debug.log*
