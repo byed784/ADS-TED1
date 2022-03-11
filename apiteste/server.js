@@ -17,6 +17,12 @@ MongoClient.connect(uri, (err, client) => {
     });
 });
 // prerarar para responder ao GET
-app.get('/', (req, res) => {
-    res.send('Atendida a requisição GET!!');
+app.get('/angelo', (req, res) => {
+    res.send('Piá, Vou Cancelar Essa Matéria!!');
    }); 
+app.get('/', (req, res) => {
+    res.send('Tá Rodando o GET');
+    }); 
+    // rotas para animais
+    const animais = require('./animais');
+    animais(app);
