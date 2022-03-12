@@ -1,0 +1,37 @@
+# Obter lista de colaboradores
+GET http://localhost:3000/colaborador
+Content-Type: application/json
+###
+# Inserir novo animal
+POST http://localhost:3000/colaborador
+Content-Type: application/json
+
+{
+ "nome": "Angelera",
+ "email": "euvoucancelar@essamateria.com",
+ "senha": 213587
+}
+###
+# Alterar um colaborador
+PUT http://localhost:3000/colaborador
+Content-Type: application/json
+
+{
+ "_id": "622be6945ff4d941b8f3bad5",
+ "nome": "Angelo",
+ "email": "angelo@email.com",
+ "senha": 98765
+}
+###
+# Excluir um colaborador pelo id
+DELETE http://localhost:3000/colaborador/622be6945ff4d941b8f3bad5
+Content-Type: application/json
+###
+# Obter colaborador pelo id
+GET http://localhost:3000/colaborador/622be6945ff4d941b8f3bad5
+Content-Type: application/json
+###
+# Obter animais filtrando
+GET http://localhost:3000/colaborador/filtro/emer
+Content-Type: application/json
+###
